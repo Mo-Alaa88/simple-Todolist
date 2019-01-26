@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LocalStorage</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="alert text-capitalize feedback">
+		<p>please enter valid value</p>
+	</div>
+	<form class="navbar">
+		<input class="form-control col-3" type="text" required value="" id ='input' placeholder='الموضوع'>
+		<input type="number" required class="col-1 form-control text-capitalize" id="itemInputNum" placeholder="رقم الملف .....">
+
+		<input class="col-2 form-control " type='text' required placeholder='التأشيرة .....' id = 'signature'>
+		<input class="col-1 form-control " type ='date' required placeholder='تاريخ التأشيرة' id = 'dateSignature'>
+		<input class="col-1 form-control " type='date' required placeholder='التاريخ المتوقع للرد' id = 'deadLine'>
+		<input class="col-1 form-control " type='text' required placeholder='الادارة المحال لها الملف' id='management'>
+		<input class="col-2 form-control " type='text' placeholder='ملاحظات'  id='notes'>
+
+		<button class="add" type="submit">إضافة موضوع</button>
+		<button class="all">كل المواضيع</button>
+		<button class="activ">مواضيع تحت المتابعة</button>
+		<!-- <button id="localDelete">Delete localStorage</button> -->
+		<div class='items col-12 inline'>
+			<!-- <p class='col-12 item-name text-capitalize inline'> -->
+				<h2 class='col-3'>الموضوع </h2> 
+				<h2 class='item-num col-1'> رقم الملف</h2> 
+				<h2 class = 'col-2'>التأشيرة</h2>
+				<h2 class = 'col-1'>تاريخ التأشيرة</h2>
+				<h2 class = 'col-1'>التاريخ المتوقع للرد</h2>
+				<h2 class = 'col-1'>الادارة المحال لها الملف</h2>
+				<h2 class = 'col-3'>ملاحظات</h2>
+			<!-- </p>
+			<button class="task-done" style="color: green">✔</button> -->
+		
+		</div>
+	</form>
+	<div id="ToDoList">
+		
+
+
+	</div>
+	<script src="jquery-3.1.1.js"></script>
+	<script id="template" type="text/template">
+		<li>
+			<!-- text -->
+			<!-- <div id = 'div'></div>
+			<button class="task-done" style="color: green">✔</button> -->
+			<!-- <button class="remove" style="color: red">✖</button> -->
+		</li>
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>
